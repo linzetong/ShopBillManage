@@ -9,11 +9,12 @@
         <option value="$PROJECT_DIR$/shop-web-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/shop-web-service/pom.xml" />
         <option value="$PROJECT_DIR$/shop-web-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-web-auth/shop-web-auth-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/shop-web-auth/shop-web-auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-web-auth/pom.xml" />
       </set>
     </option>
   </component>

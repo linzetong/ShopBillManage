@@ -2,12 +2,22 @@ server:
   port: 8080
 spring:
   application:
-    name: web-service
-  eureka:
-    client:
-      fetch-registry: true
-      register-with-eureka: true
-      service-url:
-        defaultZone: http://127.0.0.1:10086/eureka
-    instance:
-      prefer-ip-address: true
+    name: bill-service
+#  datasource:
+#      url: jdbc:oracle:thin:@192.168.1.98:1521:orcl
+#      username: lzt
+#      password: xy123
+#      driver-class-name: oracle.jdbc.driver.OracleDriver
+  datasource:
+    url: jdbc:mysql://localhost:3306/myself_p?characterEncoding=utf8
+    username: root
+    password: zt1209
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    prefer-ip-address: true

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop-web-auth-common" />
+        <module name="shop-web-auth-service" />
         <module name="shop-web-common" />
         <module name="shop-web-eureka-server" />
         <module name="shop-web-gateway" />
@@ -15,7 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="shop-web-auth-service" target="1.8" />
+      <module name="shop-web-auth" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

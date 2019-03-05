@@ -14,8 +14,9 @@ eureka:
 zuul:
   prefix: /shop
   retryable: true
-#  routes:
-#      web-service: /web/ribbon:**
+  routes:
+    bill-service: /bill-service/**
+    auth-service: /auth-service/**
 ribbon:
   ConnectTimeout: 100
   ReadTimeout: 600

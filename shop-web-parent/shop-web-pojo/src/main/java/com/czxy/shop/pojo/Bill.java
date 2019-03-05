@@ -1,12 +1,14 @@
-package com.czxy.shop;
+package com.czxy.shop.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * @Author: 天子笑
@@ -15,13 +17,14 @@ import java.sql.Timestamp;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Bill {
 
     @Id
     @Column(name = "bill_id")
     private Integer billId;
 
-    @Column(name = "productName")
+    @Column(name = "product_name")
     private String productName;
 
     @Column(name = "provider_name")
@@ -37,6 +40,6 @@ public class Bill {
     private Integer isPay;
 
     @Column(name = "create_time")
-    private Timestamp createTime;
+    private String createTime;
 
 }
